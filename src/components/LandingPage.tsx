@@ -1,4 +1,5 @@
-import { Activity, TrendingUp, Zap, BarChart3 } from 'lucide-react';
+import { TrendingUp, Zap, BarChart3, Activity } from 'lucide-react';
+import logo from '../assets/image-DNaKSDV2Vm6rz8yKS6WtuJwy4rLZwh.png';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -18,7 +19,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
           <div className="relative">
             <div className="absolute inset-0 gradient-hero rounded-2xl blur-2xl opacity-60 animate-pulse" />
             <div className="relative p-6 bg-card/80 backdrop-blur-sm rounded-2xl border border-primary/20">
-              <Activity className="w-20 h-20 text-primary" strokeWidth={1.5} />
+              <img src={logo} alt="Creator Pulse" className="w-20 h-20" />
             </div>
           </div>
         </div>
