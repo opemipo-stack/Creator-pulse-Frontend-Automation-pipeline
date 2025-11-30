@@ -390,7 +390,6 @@ import {
   AlertCircle,
   CheckCircle,
   Play,
-  Sparkles,
 } from 'lucide-react';
 import { RedditScraper, YoutubeScraper, FacebookScraper, ScrapedPost, AnalysisResult } from '../lib/scrapers';
 import { AnalysisApiClient } from '../lib/api';
@@ -614,11 +613,6 @@ useEffect(() => {
           </div>
         )}
 
-        {!analysis && !loading && (
-          <div className="mt-12 text-center py-16 animate-fade-in">
-            <Sparkles className="w-12 h-12 text-primary/40 mx-auto" />
-          </div>
-        )}
       </div>
     </div>
   );
